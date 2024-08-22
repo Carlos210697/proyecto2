@@ -1,5 +1,5 @@
  node_modules/
- boot_sessions/
+ *_sessions
  *qr.png
  *.log
 node_modules
