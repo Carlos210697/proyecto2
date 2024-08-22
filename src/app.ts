@@ -10,9 +10,10 @@ const main = async () =>{
 
     provider.http.server.post('/send-message',handleCtx(async(bot,req,res) =>{
         const body = req.body
-        const message = body.message
+        const mensaje = body.mensaje
         const mediaUrl = body.mediaUrl
-        await bot.sendMessage('51972778552',message,{
+        const numero = body.numero
+        await bot.sendMessage(numero,mensaje,{
             media: mediaUrl
         })
         res.end('esto es una terminal de polka')
